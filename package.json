@@ -1,0 +1,22 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is a react tutorial",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyaThomas4/React.git"
+  },
+  "author": "Shreya Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreyaThomas4/React/issues"
+  },
+  "homepage": "https://github.com/shreyaThomas4/React#readme",
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  }
+}
