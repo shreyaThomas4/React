@@ -1,5 +1,29 @@
-// <!-- create element takes 3 elements, tag, object, and what value needs to be added in tag --
-// <!-- creating react program -->
+/***
+ *
+ * Created A Server
+ * HMR - Hot Module Replacement
+ * File Watcher algorithm - C++
+ * BUNDLING
+ * MINIFY
+ * Cleaning our Code
+ * Dev abd Production Build
+ * Super Fast build algorithm
+ * Image Optimization
+ * Caching while development
+ * Compression
+ * Compatble with older version of browser
+ * HTTPS on dev
+ * port Number
+ * Consistent Hashing Algorithm
+ * Zero Config
+ *
+ *
+ *
+ * Transitive Dependencies
+ */
+
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 // const heading = React.createElement("h1", {}, "Hello from React");
 // // {} is place where we give attributes
@@ -9,30 +33,36 @@
 
 // nested child
 
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement(
-    "div",
-    { id: "child" },
-    React.createElement("h1", {}, "I am h1 tag")
-  )
+const heading = React.createElement(
+  "h1",
+  {
+    id: "title",
+  },
+  "Heading 1 for parcel"
 );
 
-// if we want to give more than one child we can convert the third argument into an array
+const heading2 = React.createElement(
+  "h2",
+  {
+    id: "title",
+  },
+  "Heading 2"
+);
 
-const parent2 = React.createElement(
-    "div",
-    { id: "parent" },
-    React.createElement(
-      "div",
-      { id: "child" },
-      [React.createElement("h1", {}, "I am h1 tag"), React.createElement("h2", {}, "I am h2 tag")]
-    )
-  );
+const container = React.createElement(
+  "div",
+  {
+    id: "container",
+    hello: "world",
+  },
+  [heading, heading2]
+);
 
-console.log(parent);
+console.log(heading);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+//passing a react element inside the root
+
+//async defer
+root.render(container);

@@ -1,29 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!-- any content we give inside this root will get replaced by the content coming from app.js -->
-    <div id="root"></div>
-
-
-    <!-- without React/ Hello world using js  -->
-    <!-- <script>
-        const heading = document.createElement("h1");
-        heading.innerHTML = "Hello World from js"
-
-        const root = document.getElementById('root');
-        root.appendChild(heading);
-    </script> -->
-    <script crossorigin src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
-
-    <!-- order of the script matters first declare react then react dom -->
-
-
-    <script src="./App.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="root">Not Rendered</div>
+    <script type="module" src="App.js"></script>
+  </body>
 </html>
