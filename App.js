@@ -41,28 +41,52 @@ const heading = React.createElement(
   "Heading 1 for parcel"
 );
 
-const heading2 = React.createElement(
-  "h2",
-  {
-    id: "title",
-  },
-  "Heading 2"
-);
+// const heading2 = React.createElement(
+//   "h2",
+//   {
+//     id: "title",
+//   },
+//   "Heading 2"
+// );
 
-const container = React.createElement(
-  "div",
-  {
-    id: "container",
-    hello: "world",
-  },
-  [heading, heading2]
-);
+// const container = React.createElement(
+//   "div",
+//   {
+//     id: "container",
+//     hello: "world",
+//   },
+//   [heading]
+// );
 
-console.log(heading);
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo-container">
+        <img className="logo" src="https://static.vecteezy.com/system/resources/previews/011/883/296/non_2x/modern-graphic-leaf-abstrack-with-water-drop-colorful-logo-good-for-technology-logo-fruits-logo-fresh-logo-nature-logo-company-logo-dummy-logo-bussiness-logo-vector.jpg" />
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Contact us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 //passing a react element inside the root
 
 //async defer
-root.render(container);
+root.render(<AppLayout/>);

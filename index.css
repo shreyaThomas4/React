@@ -1,3 +1,30 @@
 #container {
-    background-color: yellow;;
+  /* background-color: yellow; */
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+}
+
+.logo {
+  height: 100px;
+}
+.nav-items {
+    padding: 0 20px;
+}
+.nav-items > ul {
+    display: flex;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.nav-items > ul > li  {
+    padding: 20px;
 }
