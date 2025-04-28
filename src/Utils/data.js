@@ -12,7 +12,7 @@ export const restaurantObj = [
         cuisines: ["Pizzas"],
         avgRating: 4.2,
         parentId: "721",
-        avgRatingString: "4.2",
+        avgRatingString: "3.2",
         totalRatingsString: "63",
         sla: {
           deliveryTime: 46,
@@ -179,7 +179,7 @@ export const restaurantObj = [
         cuisines: ["North Indian", "Biryani", "Tandoor"],
         avgRating: 4.3,
         parentId: "27123",
-        avgRatingString: "4.3",
+        avgRatingString: "3.5",
         totalRatingsString: "1.3K+",
         sla: {
           deliveryTime: 33,
