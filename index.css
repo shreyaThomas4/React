@@ -46,3 +46,12 @@ body{
     flex-wrap: wrap;
     gap: 10px;
 }
+
+.shimmer-container {
+  height: 400px;
+  width: 230px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+  background-color: lightgray;
+}
