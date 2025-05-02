@@ -55,3 +55,7 @@ body{
   padding: 20px;
   background-color: lightgray;
 }
+
+.search-container {
+  margin: 10px;
+}
